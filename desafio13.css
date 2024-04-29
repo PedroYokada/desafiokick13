@@ -1,0 +1,148 @@
+/* Aqui temos a cor de fundo da pagina */
+body {
+  background-color: #0001cb;
+}
+
+/* Aqui temos a classe header, a fonte com tamanho 45px, 
+o texto centralizado e a cor da fonte preta */
+.header {
+  font-size: 45px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* Aqui temos a classe da div que engloba a imagem principal da pagina html, 
+largura de 1850px, 
+altura de 100px, cor de fundo ciano, 
+border-radius de 10px com borda preta   */
+.div-header {
+  width: 1850px;
+  height: 100px;
+  background-color: #00e1ff;
+  border-radius: 10px;
+  border-color: black;
+}
+
+/* Aqui contem a classe da div do primeiro paragrafo, o display flex serve para deixar 
+a tag com aspecto de mais flexivel, a largura é de 1850px  */
+.div-paragrafo1 {
+  display: flex;
+  width: 1850px;
+}
+
+/* Aqui é a classe da div da imagem principal da pagina, largura de 500px, altura de 300px, 
+margin:auto serve para centralizar a imagem, o estilo da borda é sólida e a cor da borda é ciano*/
+.div-imagemprincial {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  border-style: solid;
+  border-color: #00e1ff;
+}
+
+/* Essa classe estiliza a div contendo as imagens dos personagens de Megaman X*/
+/* nessa classe a largura, altura e margem são ajustadas ao tamanho do conteudo*/
+/* o display grid tem a função de um contêiner de grade, o que significa que seus filhos diretos 
+(itens da grade) serão organizados em uma grade.*/
+/* o grid-template cria um número de colunas que se ajusta automaticamente ao tamanho do contêiner pai.*/
+/*o gap define o espaço entre as células da grade*/
+/*a propriedade box-sizing serve para calcular a largura e a altura do elemento*/
+.div-personagens {
+  width: auto;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1px;
+  box-sizing: border-box;
+}
+
+/*Esta classe foi feita com o intuito de pular linhas*/
+.div-pularlinha {
+  height: 30px;
+}
+
+/*Nesta classe temos a cor da fonte branca, texto justificado e fonte Segoe UI*/
+.p1 {
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  font-family: "Segoe UI";
+}
+
+/*Nesta classe temos a cor da fonte branca, texto centralizado, fonte Segoe UI e fonte Segoe UI*/
+.p2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Segoe UI";
+}
+
+/*Esta classe tem a finalidade de estilizar o rodapé da pagina, cor branca, texto centralizado, fonte Segoe UI e tamanho de 16px*/
+.footer {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Segoe UI";
+}
+
+/* Esta classe tem o intuito de estilizar a div que contem uma tabela*/
+/* nessa classe a largura, altura e margem são ajustadas ao tamanho do conteudo*/
+/* o display grid tem a função de um contêiner de grade, o que significa que seus filhos diretos 
+(itens da grade) serão organizados em uma grade.*/
+/* o grid-template cria um número de colunas que se ajusta automaticamente ao tamanho do contêiner pai.*/
+/*o gap define o espaço entre as células da grade*/
+/*a propriedade box-sizing serve para calcular a largura e a altura do elemento*/
+.div-table {
+  width: auto;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100, 1fr));
+  gap: 1px;
+  box-sizing: border-box;
+  justify-items: center;
+}
+
+/* Esta classe tem o intuito de estilizar a a tabela da pagina*/
+/* A cor da fonte é branca, fonte Segoe UI, texto centralizado, a borda da tabela double, 
+borda de cor branca, largura de 400px e altura de 500px*/
+.table {
+  color: white;
+  font-family: "Segoe UI";
+  background-color: #0400f8;
+  text-align: center;
+  border-style: double;
+  border-color: rgb(255, 255, 255);
+  width: 400px;
+  height: 500px;
+}
+
+/* Aqui ocorre serve para deixar a pagina mais responsiva em 768px*/
+/* aqui a div do header é reajustada para 600px de largura e 100px de altura*/
+/* aqui o rodapé, a classe de paragrafos 1 e 2 tem as fontes reajustadas no tamanho de 14px*/
+@media screen and (max-width: 768px) {
+  .div-header {
+    width: 600px;
+    height: 100px;
+  }
+  .footer,
+  .p1,
+  .p2 {
+    font-size: 14px;
+  }
+}
+
+/* Aqui ocorre serve para deixar a pagina mais responsiva em 480px*/
+/* aqui a div do header é reajustada para 425px de largura e 100px de altura*/
+/* aqui o rodapé, a classe de paragrafos 1 e 2 tem as fontes reajustadas no tamanho de 12px*/
+@media screen and (max-width: 480px) {
+  .div-header {
+    width: 425px;
+    height: 100px;
+  }
+  .footer,
+  .p1,
+  .p2 {
+    font-size: 12px;
+  }
+}
