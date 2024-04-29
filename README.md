@@ -7,6 +7,7 @@ O tema do site é sobre o game Megaman X.
 
   ![paleta de cores.png](https://github.com/PedroYokada/desafiokick13/blob/main/paleta%20de%20cores.png)
 
+- Fonte do projeto: Segoe UI
  - Arquivo HTML:
  
  ![desafio13.html](https://github.com/PedroYokada/desafiokick13/blob/main/desafio13.html)
